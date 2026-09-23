@@ -59,7 +59,7 @@ def extract_memory(client, user_input):
                 delete_memory_value(key, value)
                 
             # 디버그 모드일 때만 기억 변경 내용 출력
-            if get_debug_memory:
+            if get_debug_memory():
                 print(
                     f"[Memory] "
                     f"{operation.upper()} "
